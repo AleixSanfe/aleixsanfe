@@ -8,10 +8,6 @@
     src: url('../fonts/Gotham Bold.otf');
 }
 
-html{
-    background-color: #282e34;
-}
-
 body,html{
     width: 100vw;
     height: 100vh;
