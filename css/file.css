@@ -1,11 +1,19 @@
-@font-face {
-    font-family: "hackupc-light";
-    src: url('../fonts/Gotham Light.otf');
+:root{
+    font-size: 16px;
+    --bg-color: #222222;
+    --bg-color-secondary: #dedede;
+    --color: #555555;
+    --color-secondary: #eeeeee;
 }
 
-@font-face {
-    font-family: "hackupc-bold";
-    src: url('../fonts/Gotham Bold.otf');
+@font-face{
+    font-family: "Montserrat Bold";
+    src: url('../fonts/Montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face{
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
 body,html{
@@ -16,115 +24,62 @@ body,html{
     font-size: 16px;
 }
 
-body{
-    background-image: url('../img/barcelona.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-p{
-    font-size: 1.5em;
-}
-
-header{
+.watermark{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    background-color: rgba(255,255,255,0.2);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    font-family: "Montserrat Bold";
+}
+.watermark::before{
+    content: "ALEIX";
+    top: 10%;
+    left: 5%;
+}
+.watermark::after{
+    content: "SANFE";
+    right: 5%;
+    bottom: 10%;
+}
+.watermark::before,.watermark::after{
+    color: var(--color);
+    font-weight: bold;
+    font-size: 20rem;
+    opacity: 0.05;
+    position: absolute;
 }
 
-header > p {
-    background-color: #282e34;
-    color: white;
-    padding: 2% 4%;
-    font-family: sans-serif;
-    width: fit-content;
-}
-
-section{
-    box-sizing: border-box;
-    text-align:center;
-    padding: 20px 30px;
-    background-color:#282e34;
-    color:#ddd;
-    position: relative;
-    min-height: 85vh;
-}
-
-section.white{
-    background-color:#f4f4f4DD;
-    color:#666;
-}
-
-footer{
-    background-color:#282e34;
-    color:#ddd;
-    height: 15vh;
+.container{
     width: 100vw;
-    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: "Montserrat";
 }
 
-section img {
-    background: radial-gradient(#f4f4f466, #f4f4f400);
-    max-width: 400px;
-    width: 100%;
+.bg-dark{
+    background-color: var(--bg-color);
 }
 
-a{
-    color: white;
+.bg-light{
+    background-color: var(--bg-color-secondary);
 }
 
-a:visited{
-    color: white;
-}
-
-a.inherit{
-    color: inherit !important;
-    text-decoration: none;
-}
-
-.media{
+nav{
+    padding: 0px 3rem;
+    float: right;
+    height: 10vh;
     display: flex;
-    justify-content: space-evenly;
+    line-height: 10vh;
+    font-size: 2.5rem;
+    color: var(--color-secondary);
 }
-
-entry{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 550px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+nav > li{
+    list-style: none;
+    margin: 0px 2rem;
+    transition: transform 300ms;
 }
-
-desc{
-    text-align: center;
-    font-size: 1.1em;
-}
-
-desc.show{
-    display: block;
-    font-size: 2.5em;
-}
-
-@media only screen and (min-width: 600px) {
-
-    desc.show{
-        font-size: 4em;
-    }
-}
-
-.hackupc-light{
-    font-family: 'hackupc-light';
-    font-weight: normal
-}
-
-.hackupc-bold{
-    font-family: 'hackupc-bold';
-    font-weight: normal
+nav > li:hover{
+    transform: scale(1.3);
 }
