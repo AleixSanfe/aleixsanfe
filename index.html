@@ -1,88 +1,108 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/file.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="watermark">
-      <nav>
-        <li>
-          <i class="fab fa-twitter"></i>
-        </li>
-        <li>
-          <i class="fab fa-linkedin"></i>
-        </li>
-        <li>
-          <i class="far fa-envelope"></i>
-        </li>
-      </nav>
-    </div>
-    <div class="container bg-dark"></div>
-    <div class="container bg-light">
-      <div class="cards">
-        <div class="card">
-          <div class="card-icon">
-            <i class="fas fa-fingerprint"></i>
-          </div>
-          <div class="card-body">
-            <h3>Who am I?</h3>
-            <p>Computer Science-Software Engineer</p>
-            <p>Raised and based in Barcelona, Spain</p>
-            <p class="blank"></p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <i class="fas fa-language fa-lg"></i>
-          </div>
-          <div class="card-body">
-            <h3>How can I communicate?</h3>
-            <p>Catalan and Spanish as native</p>
-            <p>English on profesional fluid level</p>
-            <p>+ basic German</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div class="card-body">
-            <h3>Where did I study?</h3>
-            <p>UPC <small>Universitat politècnica de Catalunya</small></p>
-            <p>TUB <small>Technische Universität Berlin</small></p>
-            <p class="blank"></p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <i class="fas fa-code-branch"></i>
-          </div>
-          <div class="card-body">
-            <h3>Where have I worked?</h3>
-            <p>Junior Fullstack at Everis</p>
-            <p>Junior Fullstack at Appdrawn</p>
-            <p>Intern at Green Customers</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <i class="fas fa-wrench"></i>
-          </div>
-          <div class="card-body">
-            <h3>What have I done?</h3>
-            <p>Cool Maps <small><i>See more >></i></small> </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/file.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+		integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+</head>
+
+<body>
+	<nav>
+		<li>
+			<a href="http://github.com/AleixSanfe" target="_blank" rel="noopener noreferrer">
+				<i class="fab fa-github"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.linkedin.com/in/sanfe/" target="_blank" rel="noopener noreferrer">
+				<i class="fab fa-linkedin"></i>
+			</a>
+		</li>
+		<li>
+			<a href="mailto:aleix.sanfeliu@gmail.com" rel="noopener noreferrer">
+				<i class="far fa-envelope"></i>
+			</a>
+		</li>
+	</nav>
+	<div class="lettered-background watermark"></div>
+	<div class="container bg-dark">
+		<div class="lettered-background main-shape"></div>
+		<button id="seeMore" ><i class="fas fa-hand-point-down"></i></button>
+	</div>
+	<div class="container bg-light">
+		<div class="cards">
+			<div class="card">
+				<div class="card-icon">
+					<i class="fas fa-fingerprint"></i>
+				</div>
+				<div class="card-body">
+					<h3>Who am I?</h3>
+					<p>Computer Science-Software Engineer</p>
+					<p>Raised and based in Barcelona, Spain</p>
+					<p class="blank"></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-icon">
+					<i class="fas fa-language fa-lg"></i>
+				</div>
+				<div class="card-body">
+					<h3>How can I communicate?</h3>
+					<p>Catalan and Spanish as native</p>
+					<p>English on profesional fluid level</p>
+					<p>+ basic German</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-icon">
+					<i class="fas fa-graduation-cap"></i>
+				</div>
+				<div class="card-body">
+					<h3>Where did I study?</h3>
+					<p>UPC <small>Universitat politècnica de Catalunya</small></p>
+					<p>TUB <small>Technische Universität Berlin</small></p>
+					<p class="blank"></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-icon">
+					<i class="fas fa-code-branch"></i>
+				</div>
+				<div class="card-body">
+					<h3>Where have I worked?</h3>
+					<p>Junior Fullstack at Everis <small>(current)</small></p>
+					<p>Junior Fullstack at Appdrawn</p>
+					<p>Intern at Green Customers</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-icon">
+					<i class="fas fa-hand-holding-heart"></i>
+				</div>
+				<div class="card-body">
+					<h3>What do I support?</h3>
+					<p>Amnesty International donor</p>
+					<p class="blank"></p>
+					<p class="blank"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	const body = document.getElementsByTagName('body')[0];
+	function onSeeMore() {
+		body.scrollTo({
+			top: window.outerHeight,
+			left: 0,
+			behavior: 'smooth'
+		});
+	}
+
+	window.seeMore.addEventListener('click',() => onSeeMore())
+</script>
 </html>
