@@ -88,6 +88,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 nav{
+    z-index: 9999;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -97,7 +98,6 @@ nav{
     line-height: 10vh;
     font-size: 2.5rem;
     color: var(--color);
-    z-index: 1;
 }
 nav > li{
     list-style: none;
